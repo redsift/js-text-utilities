@@ -10,7 +10,8 @@
 
 ### Browser
 
-    <script src="//static.redsift.io/reusable/text-utilities/latest/text-utilities.umd-es2015.min.js"></script>
+    <script src="//static.redsift.io/reusable/text-utilities/latest/text-utilities.umd-es2015.min.js">
+    </script>
     <script>
         var words = text_utilities.html('split this   into.words');
         console.log(words);
