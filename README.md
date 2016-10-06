@@ -1,6 +1,6 @@
 # text-utilities
 
-[![Circle CI](https://img.shields.io/circleci/project/redsift/text-utilities.svg?style=flat-square)](https://circleci.com/gh/redsift/text-utilities)
+[![Circle CI](https://img.shields.io/circleci/project/redsift/js-text-utilities.svg?style=flat-square)](https://circleci.com/gh/redsift/text-utilities)
 [![npm](https://img.shields.io/npm/v/@redsift/text-utilities.svg?style=flat-square)](https://www.npmjs.com/package/@redsift/text-utilities)
 [![MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/redsift/text-utilities/master/LICENSE)
 
