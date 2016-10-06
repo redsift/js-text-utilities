@@ -1,0 +1,39 @@
+{
+  "name": "@redsift/text-utilities",
+  "version": "0.0.1",
+  "description": "Tiny library wrapping text processing code snippets.",
+  "keywords": [
+    "split",
+    "redsift",
+    "email",
+    "text"
+  ],
+  "homepage": "https://github.com/redsift/js-text-utilities",
+  "license": "MIT",
+  "author": {
+    "name": "Rahul Powar",
+    "url": "https://medium.com/@rahulpowar"
+  },
+  "main": "distribution/text-utilities.umd-es2015.js",
+  "jsnext:main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/redsift/js-text-utilities.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "pretest": "npm outdated && npm run build",
+    "test": "eslint index.js src && tape 'test/**/*-test.js'",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "tape": "~4.6.2",
+    "eslint": "^3.3.1",
+    "rollup": "^0.36.1",
+    "rollup-plugin-buble": "^0.14.0",
+    "rollup-plugin-json": "^2.0.0"
+  }
+}
