@@ -1,6 +1,8 @@
 'use strict';
 
 let tape = require('tape'),
+    fs = require('fs'),
+    path = require('path'),
     textUtilities = require("../");
 
 
@@ -33,3 +35,27 @@ tape('trim: Leading whitespace', function(test) {
 });   
 
 
+tape('trim: samples', function(test) {
+  const root = 'test/samples/threads/';
+  let files = fs.readdirSync(root);
+  
+  files.forEach(function(f) {
+    if (path.extname(f) !== '.txt') return;
+
+    let expectedLines = parseInt(f);
+    if (isNaN(expectedLines)) {
+      console.warn(`Filename "${f}"" does not include the expected line count`);
+      return;
+    }
+    let msg = fs.readFileSync(root + f, 'utf8');
+    let trimmed = textUtilities.trimEmailThreads(msg);
+    let trimmedLines = trimmed.split('\n').length;
+    test.equal(trimmedLines, expectedLines, f);
+
+    if (trimmedLines !== expectedLines) {
+      console.warn(trimmed);
+    }
+  });
+
+  test.end();
+});   
