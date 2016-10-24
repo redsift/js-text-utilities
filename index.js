@@ -9,3 +9,7 @@ export {
 export {
   default as trimEmailThreads
 } from "./src/trimEmailThreads";
+
+export {
+  default as replaceURLsinText
+} from "./src/replaceURLsinText";
