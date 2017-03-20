@@ -62,5 +62,5 @@ tape('trim: samples', function(test) {
     }
   });
 
-  test.ok(100 * valid / total > 60, `Success rate of ${100 * valid / total}%.`);
+  test.ok(100 * valid / total > 75, `Success rate of ${100 * valid / total}%.`);
 });
