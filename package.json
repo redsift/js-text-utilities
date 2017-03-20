@@ -32,8 +32,8 @@
   "devDependencies": {
     "tape": "~4.6.2",
     "eslint": "^3.3.1",
-    "rollup": "^0.36.1",
-    "rollup-plugin-buble": "^0.14.0",
+    "rollup": "^0.41.6",
+    "rollup-plugin-buble": "^0.15.0",
     "rollup-plugin-json": "^2.0.0"
   }
 }
