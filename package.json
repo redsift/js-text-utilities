@@ -1,6 +1,6 @@
 {
   "name": "@redsift/text-utilities",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Tiny library wrapping text processing code snippets.",
   "keywords": [
     "split",
